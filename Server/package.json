@@ -20,6 +20,7 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.3.0",
     "path": "^0.12.7",
+    "pdf-parser": "^1.0.5",
     "url": "^0.11.4"
   },
   "devDependencies": {

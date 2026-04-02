@@ -41,6 +41,6 @@ router.post('/login',loginValidation,login);
 
 router.get('/profile',protect,getProfile);
 router.put('/profile',protect,updateProfile);
-router.post('/profle',protect,changePassword);
+router.post('/profile',protect,changePassword);
 
 export default router;
