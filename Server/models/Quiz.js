@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const quizSchema = new mongoose.Schema[{
+const quizSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
@@ -68,7 +68,7 @@ const quizSchema = new mongoose.Schema[{
     }
 },{
     timestamps:true
-}];
+});
 quizSchema.index({userId:1,documents:1});
 const Quiz = mongoose.model('Quiz',quizSchema);
 
