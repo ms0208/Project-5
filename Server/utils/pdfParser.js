@@ -10,7 +10,12 @@ export const extractTextfromPDF = async (filePath) => {
         const parser = new PDFParser();
         const data = await parser.parseBuffer(dataBuffer);
 
-        return data;
+
+        return {
+            text:data.text,
+            newPages: data.newPages,
+            info: data.info,
+        };
     } catch (error) {
         console.error("PDF parsing error:", error);
         throw new Error("Failed to extract text from PDF");
